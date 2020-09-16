@@ -258,6 +258,7 @@ api = ["async-graphql", "async-graphql-warp"]
 # Sources
 sources = [
   "sources-apache_metrics",
+  "sources-aws_kinesis_firehose",
   "sources-docker",
   "sources-file",
   "sources-generator",
@@ -277,6 +278,7 @@ sources = [
   "sources-kubernetes-logs",
 ]
 sources-apache_metrics = []
+sources-aws_kinesis_firehose = ["base64", "sources-tls", "warp"]
 sources-docker = ["bollard"]
 sources-file = ["bytesize"]
 sources-generator = []
